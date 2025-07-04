@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Mohammed Alharthi – Portfolio</title>
+  <!-- خط Montserrat -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <style>
+    /* ─── RESET & VARIABLES ─── */
+    *, *::before, *::after { margin:0; padding:0; box-sizing:border-box; }
+    :root {
+      --bg: #000;
+      --fg: #fff;
+      --accent: #D4AF37;
+      --font: 'Montserrat', sans-serif;
+      --space-xs: 0.5rem;
+      --space-sm: 1rem;
+      --space-md: 2rem;
+      --space-lg: 4rem;
+    }
+    html { scroll-behavior: smooth; }
+    body {
+      background: var(--bg);
+      color: var(--fg);
+      font-family: var(--font);
+      line-height: 1.6;
+      text-align: center;
+    }
+
+    /* ─── HEADER ─── */
+    header {
+      background: #111;
+      padding: var(--space-md) var(--space-sm) var(--space-xs);
+    }
+    header img {
+      display: block;
+      margin: 0 auto var(--space-xs);
+      max-height: 80px;
+      /* للإختبار: تضيف إطار */
+      border: 2px solid #444;
+    }
+    nav a {
+      color: #bbb;
+      margin: 0 var(--space-sm);
+      text-decoration: none;
+      font-weight: 500;
+      transition: color .2s;
+    }
+    nav a:hover { color: var(--accent); }
+
+    /* ─── SECTIONS SPACING ─── */
+    section { padding: var(--space-md) var(--space-sm); }
+    /* نجعل الهوم أطول قليلاً من الأسفل */
+    #home { padding-top: var(--space-lg); padding-bottom: var(--space-md); }
+    /* About يبدأ بمسافة أقل */
+    #about { padding-top: var(--space-md); text-align: left; max-width:800px; margin:0 auto; }
+    /* باقي الأقسام */
+    #contact { padding-top: var(--space-md); }
+    
+    /* ─── TYPOGRAPHY ─── */
+    .section-title { color: var(--accent); font-size: 2rem; margin-bottom: var(--space-xs); }
+    .subtitle       { color: #ddd; font-size: 1.25rem; margin-bottom: var(--space-sm); }
+    p { margin-bottom: var(--space-sm); }
+    ul { list-style: none; padding-left:0; margin-top: var(--space-sm); text-align:left; }
+    ul li { margin-bottom: var(--space-xs); }
+    ul li strong { color: var(--accent); }
+
+    /* ─── FOOTER ─── */
+    footer {
+      background: #111;
+      padding: var(--space-sm);
+      font-size: .9rem;
+      color: #666;
+      border-top: 1px solid #333;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <!-- تأكد أنّ logo.png موجود هنا -->
+    <img src="logo.png" alt="Mohammed Alharthi Logo">
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section id="home">
+    <h1 class="section-title">Mohammed Alharthi</h1>
+    <h2 class="subtitle">Electrical Engineer</h2>
+    <p>Hello! I’m Mohammed Alharthi, an Electrical Engineer with a BSc in Electrical Engineering from Taif University and hands-on training at Saudi Electricity Company. I’m passionate about applying engineering principles to deliver safe, efficient power solutions.</p>
+  </section>
+
+  <section id="about">
+    <h1 class="section-title">About Me</h1>
+    <p>I hold a Bachelor of Science in Electrical Engineering from Taif University. During my cooperative training at Saudi Electricity Company, I supported field inspections, maintenance operations, and safety compliance. Certified in CAPM, OSHA 30-Hour, and Distribution Transformers, I bridge technical rigor with project management best practices.</p>
+    <p><strong>Languages:</strong> Arabic (Native), English (Professional Working Proficiency)</p>
+    <h2 class="subtitle">Skills</h2>
+    <ul>
+      <li><strong>Technical:</strong> AutoCAD, MATLAB/Simulink, SCADA data analysis, power quality assessment</li>
+      <li><strong>Safety & Compliance:</strong> OSHA standards, transformer diagnostics, electrical safety protocols</li>
+      <li><strong>Project Management:</strong> CAPM fundamentals, scheduling, risk analysis</li>
+      <li><strong>Soft Skills:</strong> Problem-solving, teamwork, communication, adaptability</li>
+    </ul>
+  </section>
+
+  <section id="contact">
+    <h1 class="section-title">Contact</h1>
+    <p>Email: <a href="mailto:alharthi.engineering@gmail.com" style="color:#fff; text-decoration:underline;">alharthi.engineering@gmail.com</a></p>
+    <p>LinkedIn: <a href="https://www.linkedin.com/in/mohammed-ae/" target="_blank" style="color:#fff; text-decoration:underline;">linkedin.com/in/mohammed-ae/</a></p>
+  </section>
+
+  <footer>
+    © 2025 Mohammed Alharthi
+  </footer>
+</body>
+</html>
